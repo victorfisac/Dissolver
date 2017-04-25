@@ -1,0 +1,151 @@
+fileFormatVersion: 2
+guid: 2cfa2db0cbca02d4cbe863a6359df8fc
+timeCreated: 1465733371
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bone001
+    100002: Bone003
+    100004: Bone005
+    100006: Bone007
+    100008: Bone008
+    100010: Bone009
+    100012: Bone010
+    100014: Bone011
+    100016: Bone012
+    100018: Bone014
+    100020: Bone015
+    100022: Bone016
+    100024: Bone018
+    100026: Bone019
+    100028: Bone020
+    100030: Bone022
+    100032: Bone023
+    100034: Bone024
+    100036: Bone026
+    100038: Bone027
+    100040: Bone028
+    100042: Bone029
+    100044: Bone033
+    100046: Bone050
+    100048: CC_BALL
+    100050: CC_BODY
+    100052: CC_HEAD
+    100054: CC_LARM
+    100056: CC_LSHOULDER
+    100058: CC_MASTER
+    100060: CC_RARM
+    100062: CC_RSHOULDER
+    100064: finalboss_mesh
+    100066: finalboss_mesh_handL
+    100068: finalboss_mesh_handR
+    100070: //RootNode
+    400000: Bone001
+    400002: Bone003
+    400004: Bone005
+    400006: Bone007
+    400008: Bone008
+    400010: Bone009
+    400012: Bone010
+    400014: Bone011
+    400016: Bone012
+    400018: Bone014
+    400020: Bone015
+    400022: Bone016
+    400024: Bone018
+    400026: Bone019
+    400028: Bone020
+    400030: Bone022
+    400032: Bone023
+    400034: Bone024
+    400036: Bone026
+    400038: Bone027
+    400040: Bone028
+    400042: Bone029
+    400044: Bone033
+    400046: Bone050
+    400048: CC_BALL
+    400050: CC_BODY
+    400052: CC_HEAD
+    400054: CC_LARM
+    400056: CC_LSHOULDER
+    400058: CC_MASTER
+    400060: CC_RARM
+    400062: CC_RSHOULDER
+    400064: finalboss_mesh
+    400066: finalboss_mesh_handL
+    400068: finalboss_mesh_handR
+    400070: //RootNode
+    4300000: finalboss_mesh
+    4300002: finalboss_mesh_handR
+    4300004: finalboss_mesh_handL
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: finalboss_mesh
+    13700002: finalboss_mesh_handL
+    13700004: finalboss_mesh_handR
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 10
+    meshCompression: 3
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
