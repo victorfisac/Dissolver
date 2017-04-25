@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
 // Toony Colors Pro+Mobile Shaders
 // (c) 2014,2015 Jean Moreno
 
@@ -105,7 +107,7 @@ Shader "Hidden/Toony Colors Pro 2/Outline Only (Shader Model 2)"
 				
 				#ifdef TCP2_OUTLINE_CONST_SIZE
 					//Camera-independent outline size
-					float dist = distance(_WorldSpaceCameraPos, mul(_Object2World, v.vertex));
+					float dist = distance(_WorldSpaceCameraPos, mul(unity_ObjectToWorld, v.vertex));
 					pos = pos + float4(normalize(normal),0) * _Outline * 0.01 * dist;
 				#else
 					pos = pos + float4(normalize(normal),0) * _Outline * 0.01;
@@ -137,7 +139,7 @@ Shader "Hidden/Toony Colors Pro 2/Outline Only (Shader Model 2)"
 				
 				//Camera-independent outline size
 				#ifdef TCP2_OUTLINE_CONST_SIZE
-					float dist = distance(_WorldSpaceCameraPos, mul(_Object2World, v.vertex));
+					float dist = distance(_WorldSpaceCameraPos, mul(unity_ObjectToWorld, v.vertex));
 					float4 pos = mul( UNITY_MATRIX_MV, v.vertex + float4(normal,0) * _Outline * 0.01 * dist);
 				#else
 					float4 pos = mul( UNITY_MATRIX_MV, v.vertex + float4(normal,0) * _Outline * 0.01);
@@ -232,7 +234,7 @@ Shader "Hidden/Toony Colors Pro 2/Outline Only (Shader Model 2)"
 				
 				#ifdef TCP2_OUTLINE_CONST_SIZE
 					//Camera-independent outline size
-					float dist = distance(_WorldSpaceCameraPos, mul(_Object2World, v.vertex));
+					float dist = distance(_WorldSpaceCameraPos, mul(unity_ObjectToWorld, v.vertex));
 					pos = pos + float4(normalize(normal),0) * _Outline * 0.01 * dist;
 				#else
 					pos = pos + float4(normalize(normal),0) * _Outline * 0.01;
@@ -264,7 +266,7 @@ Shader "Hidden/Toony Colors Pro 2/Outline Only (Shader Model 2)"
 				
 				//Camera-independent outline size
 				#ifdef TCP2_OUTLINE_CONST_SIZE
-					float dist = distance(_WorldSpaceCameraPos, mul(_Object2World, v.vertex));
+					float dist = distance(_WorldSpaceCameraPos, mul(unity_ObjectToWorld, v.vertex));
 					float4 pos = mul( UNITY_MATRIX_MV, v.vertex + float4(normal,0) * _Outline * 0.01 * dist);
 				#else
 					float4 pos = mul( UNITY_MATRIX_MV, v.vertex + float4(normal,0) * _Outline * 0.01);

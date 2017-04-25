@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
 // Shader created with Shader Forge v1.25 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
@@ -85,7 +87,7 @@ Shader "FK/FKToon/Toon Dissolve" {
                 float node_3734 = (((1.0 - _DissolveAmount)*1.2+-0.6)+_Dissolve_var.r);
                 float node_3707 = (1.0 - saturate((node_3734*8.0+-4.0)));
                 v.vertex.xyz += ((clamp(node_3707,0.0,0.05)*_Displace)*v.normal);
-                o.posWorld = mul(_Object2World, v.vertex);
+                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 float3 lightColor = _LightColor0.rgb;
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex );
                 UNITY_TRANSFER_FOG(o,o.pos);
@@ -185,7 +187,7 @@ Shader "FK/FKToon/Toon Dissolve" {
                 float node_3734 = (((1.0 - _DissolveAmount)*1.2+-0.6)+_Dissolve_var.r);
                 float node_3707 = (1.0 - saturate((node_3734*8.0+-4.0)));
                 v.vertex.xyz += ((clamp(node_3707,0.0,0.05)*_Displace)*v.normal);
-                o.posWorld = mul(_Object2World, v.vertex);
+                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 float3 lightColor = _LightColor0.rgb;
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex );
                 UNITY_TRANSFER_FOG(o,o.pos);
@@ -261,7 +263,7 @@ Shader "FK/FKToon/Toon Dissolve" {
                 float node_3734 = (((1.0 - _DissolveAmount)*1.2+-0.6)+_Dissolve_var.r);
                 float node_3707 = (1.0 - saturate((node_3734*8.0+-4.0)));
                 v.vertex.xyz += ((clamp(node_3707,0.0,0.05)*_Displace)*v.normal);
-                o.posWorld = mul(_Object2World, v.vertex);
+                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 o.pos = mul(UNITY_MATRIX_MVP, v.vertex );
                 TRANSFER_SHADOW_CASTER(o)
                 return o;
