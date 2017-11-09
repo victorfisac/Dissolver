@@ -53,7 +53,8 @@ public class CharacterFootDetection : MonoBehaviour
 			newSource.Play();
 
 			// Destroy the audio source after playing sound
-			Destroy(newSource, newSource.clip.length);
+			if (newSource.clip != null)
+				Destroy(newSource, newSource.clip.length);
 		}
 	}
 	#endregion

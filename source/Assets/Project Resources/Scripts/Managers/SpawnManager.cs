@@ -61,7 +61,7 @@ public class SpawnManager : MonoBehaviour
 				if(timeCounter >= totalEnemies[enemiesCount])
 				{
 					// Find current spawner transform reference
-					Transform spawnTrans = trans.FindChild("SpawnManager_Position" + spawnCount.ToString("00"));
+					Transform spawnTrans = trans.Find("SpawnManager_Position" + spawnCount.ToString("00"));
 
 					if(spawnTrans)
 					{

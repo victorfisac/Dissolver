@@ -1,4 +1,6 @@
-﻿Shader "Xffect/displacement/screen" {
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Xffect/displacement/screen" {
 Properties {
 	_DispMap ("Displacement Map (RG)", 2D) = "white" {}
 	_MaskTex ("Mask (R)", 2D) = "white" {}
@@ -63,7 +65,7 @@ uniform half _DispScrollSpeedX;
 v2f vert (appdata_t v)
 {
 	v2f o;
-	o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
+	o.vertex = UnityObjectToClipPos(v.vertex);
 	#if UNITY_UV_STARTS_AT_TOP
 	float scale = -1.0;
 	#else

@@ -50,7 +50,7 @@ public class Helper : MonoBehaviour
 		// Get references
 		cameraTrans = Camera.main.transform;
 		renderers = GetComponentsInChildren<MeshRenderer>();
-		target = newTarget.FindChild(cameraChild);
+		target = newTarget.Find(cameraChild);
 
 		// Initialize values
 		initScale = transform.localScale;

@@ -51,7 +51,7 @@ public class Fade : MonoBehaviour
 
 		if(isMain)
 		{
-			if(AudioListener.volume < 1.0f) AudioListener.volume += fadeSpeed * Time.deltaTime;
+			if(AudioListener.volume < 1.0f) AudioListener.volume += fadeSpeed*Time.deltaTime;
 			else AudioListener.volume = 1.0f;
 		}
 

@@ -372,7 +372,7 @@ public class GameplayManager : MonoBehaviour
 		if(updateUI) ui.AwakeBehaviour(characters[0]);
 
 		// Awake camera logic behaviour
-		if(updateCamera) cameraLogic.AwakeBehaviour(characters[0].transform.FindChild("Player_CameraTarget"), this);
+		if(updateCamera) cameraLogic.AwakeBehaviour(characters[0].transform.Find("Player_CameraTarget"), this);
 
 		// Awake helper logic behaviour
 		if(updateHelper) helper.AwakeBehaviour(characters[0].Trans);
